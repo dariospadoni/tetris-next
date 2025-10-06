@@ -1,0 +1,37 @@
+
+.tetromino-i {
+  background-color: var(--color-i-background);
+  border: var(--tetromino-border-width) outset var(--color-i-border);
+  
+  &.piece-index-0.rotation-0,
+  &.piece-index-3.rotation-2 { border-right: none; }
+
+  &.piece-index-1.rotation-0,
+  &.piece-index-1.rotation-2,
+  &.piece-index-1.rotation-3,
+  &.piece-index-2.rotation-0,
+  &.piece-index-2.rotation-2,
+  &.piece-index-2.rotation-3 { border-style: outset none; }
+  
+  &.piece-index-1.rotation-1,
+  &.piece-index-1.rotation-3,
+  &.piece-index-2.rotation-1,
+  &.piece-index-2.rotation-3 { border-style: none outset; }
+
+  &.piece-index-0.rotation-2,
+  &.piece-index-3.rotation-0 { border-left: none; }
+  
+  &.piece-index-0.rotation-1, 
+  &.piece-index-3.rotation-3 { border-top-style: none; }
+
+  &.piece-index-0.rotation-3, 
+  &.piece-index-3.rotation-1 { border-bottom-style: none; }
+
+  &.rotation-0.bottom-cut, &.rotation-3.bottom-cut {
+    border-bottom-style: outset;
+  }
+  
+  &.rotation-3.top-cut {
+    border-top-style: outset;
+  }
+ }

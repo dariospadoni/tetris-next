@@ -1,0 +1,140 @@
+@import "tailwindcss";
+@import "./styles/i.css";
+@import "./styles/o.css";
+@import "./styles/t.css";
+@import "./styles/l.css";
+@import "./styles/s.css";
+@import "./styles/z.css";
+@import "./styles/j.css";
+
+
+@theme {
+  --tetromino-border-width: 7px;
+  --color-i-background: #F11514;
+  --color-i-border: #fa4851;
+  --color-o-background: #0047DE;
+  --color-o-border: #4c91fc;
+  --color-t-background: #4db606;
+  --color-t-border: #8fd952;
+  --color-j-background: #d9b207;
+  --color-j-border: #fafaa7;
+  --color-l-background: #df00fc;
+  --color-l-border: #ff4aff;
+  --color-s-background: #02b5ac;
+  --color-s-border: #b4ddfa;
+  --color-z-background: #fa9302;
+  --color-z-border: #feb756;
+  --color-container-background: #9191ab;
+}
+
+:root {
+  --background: #000;
+}
+
+body {
+  background: var(--background);
+  display: flex;
+  justify-content: center;
+  font-family: retroGamingRegular, Arial, Helvetica, sans-serif;
+}
+
+.container {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.left {
+  background-color: var(--color-container-background);
+  width: 120px;
+
+  .block-indicator {
+    color: #0204a8;
+    font-size: 48px;
+    text-align: center;
+    margin: 20px;
+    border: 5px ridge #dad9fc;
+    line-height: 70px;
+    height: 80px; 
+    width: 80px;
+    background-color: #9292ab ;
+  }
+}
+ 
+.well-container {
+  margin-top: 100px;
+  border-bottom: 10px solid var(--color-container-background);
+}
+
+.center {
+  border-bottom: 10px solid var(--color-container-background);
+}
+
+.right {
+  margin-top: 100px;
+  width: 200px;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+  background-color: var(--color-container-background);
+  text-transform: uppercase;
+
+  .info-panel {
+    background-color: #242554;
+    color: white;
+    font-size: 14px;
+    padding: 30px 10px;
+    margin: 10px;
+    border: 3px inset var(--color-container-background);
+  }
+  
+  .level-indicator {
+    color: #0505ad;
+    font-size: 24px;
+    align-self: center;
+    margin-bottom: 20px;
+  }
+}
+
+.imageWrapper {
+  padding: 25px;
+  background-color: var(--color-container-background);
+  border-top: 25px solid #976897;
+}
+
+.pitch {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 525px;
+  border-left: 25px inset #474796;
+  border-right: 25px inset #212147;
+  border-bottom: 25px inset #966896;
+}
+
+.top-left-corner { 
+  position: absolute; 
+  top: 0; 
+  left: -50px;  
+  border: 25px solid transparent;
+  border-top-color: #966896;
+  border-right-color: #212147;
+}
+
+.top-right-corner { 
+  position: absolute; 
+  top: 0; 
+  right: -50px;
+  border: 25px solid transparent;
+  border-top-color: #966896;
+  border-left-color: #474796;
+}
+
+.tetromino {
+  width: 25px;
+  height: 25px;
+  position: relative;
+}
