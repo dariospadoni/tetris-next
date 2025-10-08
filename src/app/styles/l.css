@@ -20,7 +20,10 @@
 
   &.piece-index-1.rotation-0 {
     border-style: none outset outset none;
-    &::after {
+    
+    &.top-cut { border-top-style: outset; }
+    
+    &:not(.top-cut)::after {
       background-color: var(--color-l-border);
       width: var(--tetromino-border-width);
       height:  var(--tetromino-border-width);
@@ -65,7 +68,10 @@
 
   &.piece-index-1.rotation-3 {
     border-style: none none outset outset; 
-    &::after {
+
+    &.top-cut { border-top-style: outset; }
+    
+    &:not(.top-cut)::after {
       background-image: linear-gradient(135deg, #ab31ab 50%, #ff4aff 50%);
       width: var(--tetromino-border-width);
       height:  var(--tetromino-border-width);
