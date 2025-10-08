@@ -4,7 +4,7 @@ export interface Square {
   c: number;
 }
 
-export type Board = Cell[][];
+export type Board = (Cell | null)[][];
 
 export enum Rotation {
   Initial = 0,

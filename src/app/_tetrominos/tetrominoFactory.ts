@@ -25,6 +25,8 @@ class TetrominoFactory {
         return new Tetraminos.T(squares, onFallFinished, onUpdate);
       case 'o': 
         return new Tetraminos.O(squares, onFallFinished, onUpdate);
+      default:
+        throw new Error(`Invalid shape type: ${shapeType}`);
     }
   }
 }
