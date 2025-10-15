@@ -8,7 +8,7 @@ Never heard of Tetris? [This](https://bitvint.com/pages/tetris) is for you.
 
 
 
-Game Preview https://dariospadoni.github.io/tetris-next/ 
+Play here https://dariospadoni.github.io/tetris-next/ 
 
 Feel free to contribute, suggest and share bugs.
 
