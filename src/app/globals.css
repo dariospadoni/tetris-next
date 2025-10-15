@@ -77,15 +77,18 @@ body {
   justify-content: space-between;
   display: flex;
   background-color: var(--color-container-background);
-  text-transform: uppercase;
 
   .info-panel {
     background-color: #242554;
     color: white;
     font-size: 14px;
-    padding: 30px 10px;
+    padding: 10px 10px;
     margin: 10px;
     border: 3px inset var(--color-container-background);
+    
+    ul {
+      margin-top: 10px;
+    }
   }
   
   .level-indicator {

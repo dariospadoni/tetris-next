@@ -62,8 +62,16 @@ export default function Home() {
           <img src={"tetris.png"} alt="Tetris" />
         </div>
         <div className="info-panel">
-          Press 1 to play or
-          p to pause
+            HELP<br />
+          <ul>
+            <li>1 : play</li>
+            <li>P : pause</li>
+            <li>&larr; : move left</li>
+            <li>&rarr; : move right</li>
+            <li>&uarr; : rotate</li>
+            <li>&darr; : speed up</li>
+            <li>Space : drop</li>
+          </ul>           
         </div>
         
         <div className="level-indicator">LEVEL {level}</div>
