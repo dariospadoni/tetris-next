@@ -1,6 +1,6 @@
 ## Summary
 
-A react Tetris game I implemented for fun and refresh my knowledge of React.
+A react Tetris game I implemented for fun and to refresh my knowledge of React.
 
 ![Tetris Screenshot](./public/screenshot.png)
 
