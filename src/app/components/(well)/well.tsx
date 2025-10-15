@@ -94,7 +94,7 @@ export default function Well() {
       
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent): void => {
-      if (!tetromino) { return; }
+      if (!tetromino || gameStatus !== GameStatus.PLAY) { return; }
       switch (event.key) {
         case ' ':
           tetromino.dropDown();
@@ -119,13 +119,14 @@ export default function Well() {
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [tetromino]);
+  }, [tetromino, gameStatus]);
 
   useInterval(() => {
     if (tetromino && gameStatus === GameStatus.PLAY) {
       tetromino.tick();
     }       
   }, tickSpeed);
+
   return (
     <Layout>
       <div className="pitch">

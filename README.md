@@ -2,7 +2,11 @@
 
 A react Tetris game I implemented for fun and refresh my knowledge of React.
 
+![Tetris Screenshot](./public/screenshot.png)
+
 Never heard of Tetris? [This](https://bitvint.com/pages/tetris) is for you.
+
+
 
 Game Preview https://dariospadoni.github.io/tetris-next/ 
 
